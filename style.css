@@ -1,0 +1,110 @@
+*,
+::before,
+::after {
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  background-color: #2a2a2b;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* !-------------------------------- */
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5%;
+  /* border: 1px solid red; */
+}
+
+/* !-------------------------------- */
+.app {
+  background-color: #272727;
+  width: min-content;
+  max-width: 50rem;
+  height: min-content;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 5rem;
+  box-shadow: 0 0 6rem #00000025;
+  background-image: linear-gradient(-15deg, #1b1d1d 0%, #37393b 120%);
+  border-top: 3px solid #ffffff25;
+  border-left: 3px solid #ffffff15;
+}
+
+/* !--------------------------------- */
+.display {
+  height: 30rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+/* !--------------------------------- */
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 7.4rem);
+  grid-template-rows: repeat(5, 7.4rem);
+  grid-gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+/* !---------------------------------- */
+.btn {
+  border: 3px solid #ffffff20;
+  box-shadow: 0 0.2rem 1rem #00000025;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn:hover {
+  filter: brightness(110%);
+  background-color: #ffffff15;
+}
+
+.btn:active {
+  filter: brightness(120%);
+  background-color: #ffffff15;
+}
+.btn-zero {
+  grid-column: 1/3;
+}
+
+.btn-number {
+  color: #ddd;
+  font-size: 2.6rem;
+  background-image: linear-gradient(145deg, #222222 0%, #333333 100%);
+}
+
+.btn-type--1 {
+  background-image: linear-gradient(145deg, #444 0%, #555 100%);
+  font-size: 2.4rem;
+  color: #999;
+}
+
+.btn-type--2 {
+  background-image: linear-gradient(-45deg, #ff843c 0%, #fa5c00 100%);
+  font-size: 3.6rem;
+  color: #fff;
+}
+
+/* !---------------------- */
