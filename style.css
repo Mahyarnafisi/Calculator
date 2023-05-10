@@ -35,7 +35,7 @@ body {
   box-shadow: 0 1rem 3rem #00000035;
   border: 2px solid #ffffff25;
   width: 15rem;
-  background-color: #ffffff25;
+  background-color: #11111135;
   backdrop-filter: blur(20px);
   border-radius: 0.7rem;
   transition: all 0.3s;
@@ -43,12 +43,13 @@ body {
 }
 .brand:hover {
   gap: 1rem;
-  background-color: transparent;
+  background-color: #11111145;
 }
 
 .brand:hover .brand__title {
   font-size: 1.6rem;
   transform: translate(-1rem, -1rem);
+  color: #ec8b1d;
 }
 
 .brand:hover .mahyarsign {
