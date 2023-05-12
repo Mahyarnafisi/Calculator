@@ -125,6 +125,8 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  color: #ffffff99;
+  font-weight: 900;
 }
 
 /* !--------------------------------- */
