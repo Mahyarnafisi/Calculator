@@ -89,6 +89,7 @@ body {
   height: min-content;
   padding: 0 1rem;
   /* border: 1px solid red; */
+  animation: load-in 1s alternate;
 }
 
 /* !-------------------------------- */
@@ -179,4 +180,17 @@ body {
 /* !---------------------- */
 input {
   padding: 1rem;
+}
+
+/* !animation -------------- */
+@keyframes load-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
