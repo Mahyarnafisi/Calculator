@@ -5,6 +5,7 @@ let previousOperator;
 
 const screen = document.querySelector(".display");
 
+// Event button click ----------------------------
 function buttonClick(value) {
   if (isNaN(value)) {
     handleSymbol(value);
@@ -14,6 +15,7 @@ function buttonClick(value) {
   screen.innerText = buffer;
 }
 
+// event Symbol input ----------------------------
 function handleSymbol(symbol) {
   switch (symbol) {
     case "AC":
@@ -46,6 +48,7 @@ function handleSymbol(symbol) {
   }
 }
 
+// event Math handler-----------------------------
 function handleMath(symbol) {
   if (buffer === 0) {
     return;
@@ -80,6 +83,7 @@ function handleNumber(numberString) {
   }
 }
 
+// event bobbling ---------------------------
 function init() {
   document.querySelector(".keypad").addEventListener("click", function (e) {
     buttonClick(e.target.innerText);
