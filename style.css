@@ -20,6 +20,7 @@ body {
   justify-content: center;
   background-image: radial-gradient(#595b5c 0%, #414142 100%);
   position: relative;
+  user-select: none;
 }
 
 /* !-------------------------------- */
@@ -29,8 +30,8 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 3rem;
-  bottom: 3rem;
-  left: 3rem;
+  bottom: 1rem;
+  left: 0rem;
   padding: 2rem;
   box-shadow: 0 1rem 3rem #00000035;
   border: 2px solid #ffffff25;
@@ -40,16 +41,20 @@ body {
   border-radius: 0.7rem;
   transition: all 0.3s;
   overflow: hidden;
+  transform: scale(0.7);
+  user-select: none;
 }
 .brand:hover {
   gap: 1rem;
   background-color: #11111145;
+  transform: scale(1);
 }
 
 .brand:hover .brand__title {
   font-size: 1.6rem;
   transform: translate(-1rem, -1rem);
   color: #ec8b1d;
+  font-weight: 600;
 }
 
 .brand:hover .mahyarsign {
@@ -59,7 +64,7 @@ body {
 .brand__title {
   color: #ddd;
   font-size: 2.8rem;
-  font-weight: 700;
+  font-weight: 600;
   transition: all 0.3s;
   transform: translate(-2px, 3px);
 }
@@ -81,6 +86,8 @@ body {
   justify-content: center;
   padding: 0 5%;
   position: relative;
+  height: min-content;
+  padding: 0 1rem;
   /* border: 1px solid red; */
 }
 
@@ -101,7 +108,7 @@ body {
   background-image: linear-gradient(-15deg, #1b1d1d 0%, #37393b 120%);
   border-top: 4px solid #ffffff25;
   border-left: 2px solid #ffffff25;
-  position: relative;
+  position: fixed;
 }
 
 /* !--------------------------------- */
@@ -110,6 +117,13 @@ body {
   margin-bottom: 2rem;
   width: 100%;
   border-radius: 2rem;
+  font-family: "Lato", sans-serif;
+  font-size: 3.6rem;
+  opacity: 70%;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 /* !--------------------------------- */
@@ -137,7 +151,7 @@ body {
 }
 
 .btn:active {
-  filter: brightness(120%);
+  filter: brightness(140%);
   background-color: #ffffff15;
 }
 .btn-zero {
@@ -163,3 +177,6 @@ body {
 }
 
 /* !---------------------- */
+input {
+  padding: 1rem;
+}
